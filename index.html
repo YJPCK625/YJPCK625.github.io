@@ -44,21 +44,23 @@
     <section class="mainbox">
       <div class="column">
         <!--图表1-->
-        <div class="panel bar1">  <!--柱形图bar-->
-          <h2>PH <a href="javascript:;"></a>
-          </h2>
+        <div class="panel bar1">
+          <!--柱形图bar-->
+          <h2>PH <a href="javascript:;"></a></h2>
           <div class="chart"></div>
           <div class="panel-footer"></div>
         </div>
         <!--图表2-->
-        <div class="panel bar2">   <!--折线图line-->
-          <h2>高猛酸盐指数(mg/L)-</h2>
+        <div class="panel bar2">
+          <!--折线图line-->
+          <h2>TOC以及叶绿素a(ug/ml)</h2>
           <div class="chart"></div>
           <div class="panel-footer"></div>
         </div>
         <!--图表3-->
-        <div class="panel bar3">   <!--饼图pie-->
-          <h2>总氮</h2>
+        <div class="panel bar3">
+          <!--饼图pie-->
+          <h2>高猛酸盐指数(mg/L)</h2>
           <div class="chart"></div>
           <div class="panel-footer"></div>
         </div>
@@ -66,36 +68,49 @@
       <!--图表4-->
       <div class="column">
         <div class="no">
-          <div class="no-hd">  <!--中间板块数字-->
+          <div class="no-hd">
+            <!--中间板块数字-->
             <ul>
               <li>82</li>
-              <li>5</li>
+              <li>10</li>
             </ul>
           </div>
-          <div class="no-bd">  <!--中间板块文字-->
+          <div class="no-bd">
+            <!--中间板块文字-->
             <ul>
               <li>采样点数量</li>
-              <li>采样分析种类数量</li>
+              <li>采样成分分析种类</li>
             </ul>
           </div>
         </div>
-        <div class="map">      <!--中间地图模块-->
+        <!-- 旧地图
+          <div class="map">
           <div class="chart"></div>
           <div class="map1"></div>
           <div class="map2"></div>
           <div class="map3"></div>
+        </div>-->
+        <div id="newmap" class="map" style="height: 56%"></div>
+        <div class="no-bd">
+          <!--柱状图中下-->
+          <div class="panel bar7">
+            <h2>总磷/氨氮/总氮</h2>
+            <div class="chart"></div>
+            <div class="panel-footer"></div>
+          </div>
         </div>
+        
       </div>
       <div class="column">
         <!--图表4-->
         <div class="panel bar4">
-          <h2>柱状图-总磷</h2>
+          <h2>浊度(NTU)</h2>
           <div class="chart"></div>
           <div class="panel-footer"></div>
         </div>
         <!--图表5-->
         <div class="panel bar5">
-          <h2>柱状图-TOC</h2>
+          <h2>硝态氮及亚硝氮(mg/L)</h2>
           <div class="chart"></div>
           <div class="panel-footer"></div>
         </div>
@@ -109,13 +124,21 @@
     </section>
     <script src="js/flexible.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/echarts.min.js"></script>
+    <script src="./js/echarts/echarts.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://api.map.baidu.com/api?v=3.0&ak=6UlW3dsYyOi1rhwAsSnQBkwHGFITvGCh"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/echarts/extension/bmap.min.js"
+    ></script>
     <script src="js/index.js"></script>
-    <script src="js/china.js"></script>
-    <script src="js/myMap.js"></script>
-    <script src="js/610000_full.js"></script>
-    <script src="js/map.js"></script>
-    <script src="json/610000_full.json"></script>
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=6UlW3dsYyOi1rhwAsSnQBkwHGFITvGCh"></script>
+    <!--<script src="js/china.js"></script>-->
+    <!--<script src="js/myMap.js"></script>-->
+    <script src="./js/newmap.js"></script>
+    <!--<script src="js/610000_full.js"></script>-->
+    <!--<script src="js/map.js"></script>-->
+    <!--<script src="json/610000_full.json"></script>-->
   </body>
 </html>

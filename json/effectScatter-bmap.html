@@ -1,0 +1,423 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=effectScatter-bmap&code=MYewdgzgLgBAJgQygmBeGBtAsAKBjAbxjAQFsBTALhgHJBxxMDG0wTocBGGgGhgDcEAbAVyowAnMJgBfdrnxESFavWYAmDtz6DqoiVLyFiZIYqYBmVTwFCtk6XrmHGTACxn1lsdd2yDChwFYXFpruOjL68rQOAGwBGiLBNl7hRtGc5rFWIbbeEcwA7DFu2riJ9swAHAVBRTglPszClXHVtTmsAAyNGcVhpaxsqa5VHi1GLCoDgU3DPXWsphPp8TUzrSzOC4XTdrMs_htDOiMOLClqk13L26v5-1OHK6MVtxdHzCwNz0uvTEodn80PBxKfpnRYAq5GJTjUGbe4QoHzGEHbrw5TrJF3FHZSF7DEvQHKU5pWFYpJAm54r4En5PSng7FAj50rYM5jGP7MuGskwg4nIy7c4zQvmYgVktmIkX41EmdFSqky4y4-X08UmImDUXfYwUlUstXGWl6rkGpnG0m9Rwc81iy28zXS7mOYUOhVOyWu1WWuWe_WW5W-k2WjXnN1qxy6wMW2aOI1R20xs3x76-a3J6m-e2hr2zXwu7N-3MegtB3M-kvR1q-AMVhNVkNgwtVyO1lNx1sZpMdmWRNPd7mRLON0utSL54eV5LFid15LlmffSI1hfUyINkmzqItlc99s7gdd_dq3J9o-9XJDjffXLjq_U3LTu8y3Lzp_c3LLt_H9f86_br_nnuAGzLkh7Aa0ZSnuBRhlJev7UmUt78gAugA3LgoCQLAADm5AgAAwiAIAAE5wAAsggAAOaCEDYxzUBgLBtJEAB0jjCI4LCwTA7DGMYLFMcIOpKMhmRAgxTGsZmL5Lrx_FjG0bQnKJdFshJzEsb4uSDsx7AAJB8QJOrCLsKm6A4jjqaxkRlI4EZlPphm7I4vYiWJzC-FZLG5CeF6-I58mGrsuRmfgUReWUuSIUojgBZpohlMYLChTADi5BFUVQrFBn8b4CVJSlDhlF5QmQbscW-GUwgxZEhX1CVtlKMIkRxW0VU-cYdXtA1zrNa17UPl1LAsD1TWRHpcksW1wgdUNSijX1OVTQNnXuXM6m5FNviONt2WGW0xjOuxQ2WZgTGbQdeZjK1MXvMIQ2eWdbQXeyNn-UtikmbZQ2RBtbFjL1cW7EoH5lEN6VPZthptFdQORMY8P3WtXF_YdjjsiwQMcYhq2qawwh_ZEnHNXt8mRXxXW_H9F52QdQPk7j5nKCNkMsYlxjCGU71OZzQluXjUJ_ZzLksMYcV2ZEwhtZTxhC1z2li0tsZtbBlOnYxz0saILkvhVShrhzlOPRrZQsUqzVtEocWvUuIVrfr6mm8THOK4ZSXw8NlMQyb_0-XtSha_rCNg_bxVPablUPv7bMubByX2wT4feZFYyuwHUfk117KO1rqYc8Ijnp20Ish3jSXqcIU1tFLnGFyxkQ3ku8dl_NSdVWUtt12OSksHbZey0n21Ne8dd5koVWOFn6tMRHfE3pjBkB3mH7Alnxsz5p7K2S1i-aUoviS74We_U9leHQ-3PpzZhpZ97glm1pnO5HX2nCHlk9rYaFcP6BkUv4fHEs6Jw1pXXuB9Jbiz4kqPuTMnBtG_r3MosEHJKz4olWqa1OIIOCn_JaJ41xjC6s6bBHMQZxRPJmZusD0bYMQeQg6UUqFhWYHZb-QUIwF13kFTMRD17VzNi-JqVsuFRXZEjPGLkvLsU4rBSaglhJELvvwnUO07J1x1PDEGRCw4gIEao6OhpNEwOYU4YB992SW2rHFWCDdRZdVTGwxS-9ub8RsReRmJjMzf33hzXWS1EKcR4WtPM3ilRaWfv48eF57ED10aDDiFVno-XsdPfhUVaak00mA949j15MTNgjGecUbK_BfPYk-jF8l8UupwwyktJaDWCXffJY1gbFJmsCDxqUPI6OGm0Fi48lR0zwQdKE9izEtLynzchaxRD81gb2b-Qlqo6msXmJ-XVBwSXyVFE8fFIE-TsWtMc2z-m7IOq7fi6NDldKiLEvpbNU5NUgVVLimzUmsWkVxFgPEnLVwUccvhnyOLfN-fJf5N5NkVMkmxEF3E5EQvmSYhuUi4U_IRUJSFxzekaS-fCv5mKkXdKYJLVFMj0UEoBXjE8ZLQUYqpbAi8tL8XgsJV1G8zKKWsoZSYh8nKwUCUReyj5sLyUCvkVi6lQLRV0spZKxl0LcVovFUKtaPl-X0vlbynFwKxWaqJWlMxSq9VyoNeUeBT1dWyu5Vq4lsENWmq6ohB1Nr5k2FwOIdCOBMLQBgJhLg5BiJQAACJIBQOgAAZvwMAwAoAAEtwAwAABSIGQAASloroHgxEYDEXIBAGiGA0I2AjSRZN2aYBxpom0VClaYAAB54BhpYrwcgYBsJQAABa1rjQAal7RmggNh8AVtwgRIipEaJjsIiRciVEMCpoQBgONyEWJ2GLbofAcaI3JunROuAg7h34FzfmlilF-AQE7Umodm7j34CuIu5dq67CZDvSOzUe7Z0sUwsAJAKaw1PpYsSNNR78DiDTV6u94gbDQd0HmqA_BiJgBPRAL1nrcAgEovGxN6Ab34HjVAVt1A8PHqgOQAAHlABQgAWG0ABSxgBFt0ANK2TAOBHtbRGqjtBgBtrI8RGgMHMhQCIrweNlFiNHqgMRON2FcLEQUAgcjcaID8d0B4fAAAjUgVFxO3u42AXj6lHACTWGMAuMAdSaTzobV9MAABeRFSDUH8ke4iIAyDUEk4IGzWnKIAGUoAAE8iOZrfTAaAQXyAACkIDgAYqB49JHQv4AjeQJAiHyAABUAuUUMAAdyQIG1jt7QvkFbRQfTWWcvyd4LwIrSXj3hdbcRCAOn6t3tALwEiCgADEcAWB9b6yptrEh4tgZs3exLSWUtpbzZVwwvAEBgDgHVtrpXyDlagHN6rtXxtvsa4GlrIXht-pAJ1uTtBusRuMFdq7Q22uwfq2ppLk3QvTYQ7N7LhhiIIDjbwfLAWVv1bWxtrbtA-A7dGw1wLTXDsvaS1wJTcb1O_bjYFhQIAI0Rru49yHT3Qtw7vW99LoOaCduk52_7gOkvA54yT8HVPQv7ea6147HWusXYjXATnnPsdJYe3z3bMhIfJdS-9zLn2FBk-whThAAPBfHppxViXtAFvqdK8p-X-Amew-F8ehHEAkco7R7QDHWPdf89C3jt9BPj1E4-1VsHQbA1xr4Azt9ivNvK5oGOigkm5e6-1yz4bbPzs0Eu-QFLKXeeW9x_Lm3IuZvi4dzQBATupOu81zAD3JOffkD9yxCNv2IfFb29Dg7Qe2sh565HiP5Bo9votw3uPuu7dJ8MJREAca3d3uz17-nmfA9HeG_rw3vBUcBfR5j-vUHY-Q_jzAVvOe81tu7wrsrtO-81dX1rsvzOh9tZH8jsfxuaCm-n8exvUHm8l8J6L4nXuID8HU5TzPvfk_94D7vnXN-32H6NxPk3Kfc3WfH_efRfL3LTMALTOAOvV_dfJXd_LfAfL_CverKvC7AbfrNgYAn_K3CbFvO_e3ebEAX9YvYbN_QwD_H_HfCLPfeffAdAsPTAwbHAx7a_YbcA9_NPF3Mg1beAz3ZPVXdXbfMLFA_ferP_Y_AA0_IA6gkbXA9gtrTgwwdTEAaNRAYif3OQig7bEQwfegk7M7avWvKPVggXOfAgxPEndTfgX7OAONdtEQnQsHJAz_Wg7_Y7Qw9nJgrAlguQy_C_RQ-rZQhQIQ3goHfgknMIiAFiMjSjAvIvPQsQgwxg7rUQdIhoMwmPEvZCI9fnJ7CAZ3fNOLW9OHQLZPCAX9KAXjN3UAWdBwgrXzALaAdbBQTTKiN3Rdagf1QNENMNf9dNXbCAALUgVQ3gXzONWzIQKNGNbDZDJNcwQ9H_eDRDZDcwDAESGAAAehgCYkgyb3izbVABgNQL101CUHizwJgDCNOOSxIi02qMDQUAIHU3EFXw7wNzmIUCk2lygFX0vRAFy2oAjT4EKMuN23W0ok7QQANw8KSxuPEL207UBI82IkEFx0uLyJszhwhAy0wxgD2Hi3KMMAjxS1jV8yqJqN2zqNIgaLIyaJaMc1oHaMok6LDW6PAADSDVDWQCTUh0XV1xYhiyDSTRmNjQTXmIQE4HUyWM8JWKQxgHUyA1cBgAAFoYAEBlSLB9jHsQM5ChSx9uMk02hOBIg9TQs00hiRixiJipjgTo1xTE0Fi-BZSkt5S1i-ANjkJtjdia1wTDiY0QATjET31JgLiS8riATcsABRTHcgWNAAeTAG-LbRgL412yk0okolbVjLJM4xt3UzRMvRJ2gFcwAGs69_SS8ESbdS1iIHiDNaAXi3j5cPjUcJTvjyc_j5cozUT0SIzdtUd1t_MItbiwtoS4BASAAhAQc7JiHsicwEwiIwi7KBevK4yE6E2EscyovgIQTzcgKs0LWzVtANXgagFgPImwXInAT1IAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    const data = [
+  { name: '采集点1', value: 99 },
+  { name: '采集点2', value: 99 },
+  { name: '采集点3', value: 99 },
+  { name: '采集点4', value: 99 },
+  { name: '采集点5', value: 99 },
+  { name: '采集点6', value: 99 },
+  { name: '采集点6', value: 99 },
+  { name: '采集点7', value: 99 },
+{ name: '采集点8', value: 99 },
+{ name: '采集点9', value: 99 },
+{ name: '采集点10', value: 99 },
+{ name: '采集点11', value: 99 },
+{ name: '采集点12', value: 99 },
+{ name: '采集点13', value: 99 },
+{ name: '采集点14', value: 99 },
+{ name: '采集点15', value: 99 },
+{ name: '采集点16', value: 99 },
+{ name: '采集点17', value: 99 },
+{ name: '采集点18', value: 99 },
+{ name: '采集点19', value: 99 },
+{ name: '采集点20', value: 99 },
+{ name: '采集点21', value: 99 },
+{ name: '采集点22', value: 99 },
+{ name: '采集点23', value: 99 },
+{ name: '采集点24', value: 99 },
+{ name: '采集点25', value: 99 },
+{ name: '采集点26', value: 99 },
+{ name: '采集点27', value: 99 },
+{ name: '采集点28', value: 99 },
+{ name: '采集点29', value: 99 },
+{ name: '采集点30', value: 99 },
+{ name: '采集点31', value: 99 },
+{ name: '采集点32', value: 99 },
+{ name: '采集点33', value: 99 },
+{ name: '采集点34', value: 99 },
+{ name: '采集点35', value: 99 },
+{ name: '采集点36', value: 99 },
+{ name: '采集点37', value: 99 },
+{ name: '采集点38', value: 99 },
+{ name: '采集点39', value: 99 },
+{ name: '采集点40', value: 99 },
+{ name: '采集点41', value: 99 },
+{ name: '采集点42', value: 99 },
+{ name: '采集点43', value: 99 },
+{ name: '采集点44', value: 99 },
+{ name: '采集点45', value: 99 },
+{ name: '采集点46', value: 99 },
+{ name: '采集点47', value: 99 },
+{ name: '采集点48', value: 99 },
+{ name: '采集点49', value: 99 },
+{ name: '采集点50', value: 99 },
+{ name: '采集点51', value: 99 },
+{ name: '采集点52', value: 99 },
+{ name: '采集点53', value: 99 },
+{ name: '采集点54', value: 99 },
+{ name: '采集点55', value: 99 },
+{ name: '采集点56', value: 99 },
+{ name: '采集点57', value: 99 },
+{ name: '采集点58', value: 99 },
+{ name: '采集点59', value: 99 },
+{ name: '采集点60', value: 99 },
+{ name: '采集点61', value: 99 },
+{ name: '采集点62', value: 99 },
+{ name: '采集点63', value: 99 },
+{ name: '采集点64', value: 99 },
+{ name: '采集点65', value: 99 },
+{ name: '采集点66', value: 99 },
+{ name: '采集点67', value: 99 },
+{ name: '采集点68', value: 99 },
+{ name: '采集点69', value: 99 },
+{ name: '采集点70', value: 99 },
+{ name: '采集点71', value: 99 },
+{ name: '采集点72', value: 99 },
+{ name: '采集点73', value: 99 },
+{ name: '采集点74', value: 99 },
+{ name: '采集点75', value: 99 },
+{ name: '采集点76', value: 99 },
+{ name: '采集点77', value: 99 },
+{ name: '采集点78', value: 99 },
+{ name: '采集点79', value: 99 },
+{ name: '采集点80', value: 99 },
+{ name: '采集点81', value: 99 },
+{ name: '采集点82', value: 99 },
+];
+const geoCoordMap = {
+  采集点1: [106.494181 ,33.109372],
+  采集点2: [106.517465,33.120016],
+  采集点3: [106.576106,	33.137915],
+  采集点4: [106.684478,	33.154602],
+  采集点5: [106.770715,	33.138157],
+  采集点6: [106.878224,	33.599831],
+  采集点7: [106.878224,	33.599831],
+  采集点8: [106.938015,	33.589246],
+  采集点9: [106.984296,	33.089773],
+  采集点10: [106.984296,	33.089773],
+  采集点11: [106.984296	,33.089773],
+  采集点12: [106.984296,	33.089773],
+  采集点13: [107.054544,	33.034249],
+  采集点14: [107.035212,	33.024199],
+  采集点15: [107.030685,	33.009184],
+  采集点16: [107.412429,	33.152758],
+  采集点17: [107.380521,	33.163639],
+  采集点18: [107.344301,	33.194823],
+  采集点19: [107.641964,	33.18733],
+  采集点20: [107.714403,	33.18733],
+  采集点21: [107.833985,	33.198932],
+  采集点22: [107.984613,	33.446908],
+  采集点23: [107.985763,	33.480881],
+  采集点24: [107.994674,	33.526639],
+  采集点25: [108.359602,	33.306657],
+  采集点26: [108.419393,	33.316311],
+  采集点27: [108.41774,	32.926368],
+  采集点28: [108.58734,	32.846811],
+  采集点29: [108.787123,	32.734873],
+  采集点30: [108.950399,	32.704618],
+  采集点31: [109.009041,	32.672651],
+  采集点32: [108.898657,	32.620117],
+  采集点33: [108.542919,	32.522894],
+  采集点34: [108.533721,	32.527521],
+  采集点35: [108.530846,	32.525695],
+  采集点36: [109.34735,	32.76838],
+  采集点37: [109.357987,	32.769594],
+  采集点38: [109.357987,	32.769594],
+  采集点39: [109.175669,	33.433357],
+  采集点40: [109.178818,	33.433836],
+  采集点41: [109.115787,	33.706612],
+  采集点42: [109.113927,	33.70511],
+  采集点43: [109.11178,	33.703781],
+  采集点44: [109.381479,	32.38151],
+  采集点45: [109.374292,	32.378309],
+  采集点46: [106.494181,33.109372],
+  采集点47: [109.374544,	32.376327],
+  采集点48: [109.374544,	32.386327],
+  采集点49: [109.300255,	33.816713],
+  采集点50: [109.300255,	33.816713],
+  采集点51: [109.253974,	33.824151],
+  采集点52: [109.235577,	33.82871],
+  采集点53: [109.75894,	33.50777],
+  采集点54: [109.784404,	33.517519],
+  采集点55: [110.336108,	33.682074],
+  采集点56: [110.330359,	33.696973],
+  采集点57: [110.296152,	33.697213],
+  采集点58: [110.283503,	33.70322],
+  采集点59: [110.259932,	33.714992],
+  采集点60: [109.939237,	33.852987],
+  采集点61: [110.787033,	33.437713],
+  采集点62: [110.787033,	33.437713],
+  采集点63: [110.812329,	33.438918],
+  采集点64: [106.494181 ,33.109372],
+  采集点65: [106.494181 ,33.109372],
+  采集点66: [106.494181 ,33.109372],
+  采集点67: [106.494181 ,33.109372],
+  采集点68: [106.494181 ,33.109372],
+  采集点69: [106.494181 ,33.109372],
+  采集点70: [106.494181 ,33.109372],
+  采集点71: [106.494181 ,33.109372],
+  采集点72: [106.494181 ,33.109372],
+  采集点73: [106.494181 ,33.109372],
+  采集点74: [106.494181 ,33.109372],
+  采集点75: [106.494181 ,33.109372],
+  采集点76: [106.494181 ,33.109372],
+  采集点77: [106.494181 ,33.109372],
+  采集点78: [106.494181 ,33.109372],
+  采集点79: [106.494181 ,33.109372],
+  采集点80: [106.494181 ,33.109372],
+  采集点81: [106.494181 ,33.109372],
+  采集点82: [106.494181 ,33.109372],
+
+  
+};
+const convertData = function (data) {
+  var res = [];
+  for (var i = 0; i < data.length; i++) {
+    var geoCoord = geoCoordMap[data[i].name];
+    if (geoCoord) {
+      res.push({
+        name: data[i].name,
+        value: geoCoord.concat(data[i].value)
+      });
+    }
+  }
+  return res;
+};
+option = {
+  title: {
+    text: '水质监测点',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'axis'
+  },
+  bmap: {
+    center: [104.114129, 37.550339],
+    zoom: 5,
+    roam: true,
+    mapStyle: {
+      styleJson: [
+        {
+          featureType: 'water',
+          elementType: 'all',
+          stylers: {
+            color: '#d1d1d1'
+          }
+        },
+        {
+          featureType: 'land',
+          elementType: 'all',
+          stylers: {
+            color: '#f3f3f3'
+          }
+        },
+        {
+          featureType: 'railway',
+          elementType: 'all',
+          stylers: {
+            visibility: 'off'
+          }
+        },
+        {
+          featureType: 'highway',
+          elementType: 'all',
+          stylers: {
+            color: '#fdfdfd'
+          }
+        },
+        {
+          featureType: 'highway',
+          elementType: 'labels',
+          stylers: {
+            visibility: 'off'
+          }
+        },
+        {
+          featureType: 'arterial',
+          elementType: 'geometry',
+          stylers: {
+            color: '#fefefe'
+          }
+        },
+        {
+          featureType: 'arterial',
+          elementType: 'geometry.fill',
+          stylers: {
+            color: '#fefefe'
+          }
+        },
+        {
+          featureType: 'poi',
+          elementType: 'all',
+          stylers: {
+            visibility: 'off'
+          }
+        },
+        {
+          featureType: 'green',
+          elementType: 'all',
+          stylers: {
+            visibility: 'off'
+          }
+        },
+        {
+          featureType: 'subway',
+          elementType: 'all',
+          stylers: {
+            visibility: 'off'
+          }
+        },
+        {
+          featureType: 'manmade',
+          elementType: 'all',
+          stylers: {
+            color: '#d1d1d1'
+          }
+        },
+        {
+          featureType: 'local',
+          elementType: 'all',
+          stylers: {
+            color: '#d1d1d1'
+          }
+        },
+        {
+          featureType: 'arterial',
+          elementType: 'labels',
+          stylers: {
+            visibility: 'off'
+          }
+        },
+        {
+          featureType: 'boundary',
+          elementType: 'all',
+          stylers: {
+            color: '#fefefe'
+          }
+        },
+        {
+          featureType: 'building',
+          elementType: 'all',
+          stylers: {
+            color: '#d1d1d1'
+          }
+        },
+        {
+          featureType: 'label',
+          elementType: 'labels.text.fill',
+          stylers: {
+            color: '#999999'
+          }
+        }
+      ]
+    }
+  },
+  series: [
+    {
+      type: 'scatter',
+      coordinateSystem: 'bmap',
+      data: convertData(data),
+      symbolSize: function (val) {
+        return val[2] / 10;
+      },
+      encode: {
+        value: 2
+      },
+      label: {
+        formatter: '{b}',
+        position: 'right',
+        show: false
+      },
+      emphasis: {
+        label: {
+          show: true
+        }
+      }
+    },
+    {
+      name: 'Top 5',
+      type: 'effectScatter',
+      coordinateSystem: 'bmap',
+      data: convertData(
+        data
+          .sort(function (a, b) {
+            return b.value - a.value;
+          })
+          .slice(0, 6)
+      ),
+      symbolSize: function (val) {
+        return val[2] / 10;
+      },
+      encode: {
+        value: 2
+      },
+      showEffectOn: 'render',
+      rippleEffect: {
+        brushType: 'stroke'
+      },
+      label: {
+        formatter: '{b}',
+        position: 'right',
+        show: true
+      },
+      itemStyle: {
+        shadowBlur: 10,
+        shadowColor: '#333'
+      },
+      emphasis: {
+        scale: true
+      },
+      zlevel: 1
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
