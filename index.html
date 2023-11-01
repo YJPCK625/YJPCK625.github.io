@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>水质采集及数据汇总信息</h1>
+      <div class="showTime">当前时间:2020年3月17-0时54分14秒</div>
+      <script>
+        var t = null;
+        t = setTimeout(time, 1000); //開始运行
+        function time() {
+          clearTimeout(t); //清除定时器
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); //获取时
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".showTime").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+      </script>
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <!--图表1-->
+        <div class="panel bar1">  <!--柱形图bar-->
+          <h2>PH <a href="javascript:;"></a>
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!--图表2-->
+        <div class="panel bar2">   <!--折线图line-->
+          <h2>高猛酸盐指数(mg/L)-</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!--图表3-->
+        <div class="panel bar3">   <!--饼图pie-->
+          <h2>总氮</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <!--图表4-->
+      <div class="column">
+        <div class="no">
+          <div class="no-hd">  <!--中间板块数字-->
+            <ul>
+              <li>82</li>
+              <li>5</li>
+            </ul>
+          </div>
+          <div class="no-bd">  <!--中间板块文字-->
+            <ul>
+              <li>采样点数量</li>
+              <li>采样分析种类数量</li>
+            </ul>
+          </div>
+        </div>
+        <div class="map">      <!--中间地图模块-->
+          <div class="chart"></div>
+          <div class="map1"></div>
+          <div class="map2"></div>
+          <div class="map3"></div>
+        </div>
+      </div>
+      <div class="column">
+        <!--图表4-->
+        <div class="panel bar4">
+          <h2>柱状图-总磷</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!--图表5-->
+        <div class="panel bar5">
+          <h2>柱状图-TOC</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!--图表1-->
+        <div class="panel pie1">
+          <h2>关于农业面源污染的调查问卷(%)</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/myMap.js"></script>
+    <script src="js/610000_full.js"></script>
+    <script src="js/map.js"></script>
+    <script src="json/610000_full.json"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=6UlW3dsYyOi1rhwAsSnQBkwHGFITvGCh"></script>
+  </body>
+</html>
